@@ -1,0 +1,25 @@
+/*Al pulsar el botón del ejercicio anterior, 
+hacer que se muestre por consola un mensaje de 
+log, otro de información y otro de error.*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="boton1">Pulsa</button>
+    <script>
+      // document.getElementById('boton1').addEventListener('click', function() {
+      //     alert('Hello World');
+      // });
+      document.querySelector("#boton1").addEventListener("click", function () {
+        console.log("Este es un mensage de log")
+        console.log("Este es un mensage de informacion")
+        console.log("Este es un mensage de error")
+      });
+    </script>
+  </body>
+</html>

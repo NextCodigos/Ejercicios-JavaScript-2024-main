@@ -1,0 +1,22 @@
+/*Añadir un nuevo botón al ejercicio 
+anterior, que al pulsarlo cambie la imagen. */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contenedor"></div>
+    <button id="boton1">Mostrar Imagen</button>
+    <button id="boton2">Cambiar Imagen</button>
+    <script src="./exercice-6.js"></script>
+    <script>
+      // Asociar eventos a los botones
+      document.querySelector("#boton1").addEventListener("click", mostrarMensajes);
+      document.querySelector("#boton2").addEventListener("click", cambiarImagen);
+    </script>
+  </body>
+</html>

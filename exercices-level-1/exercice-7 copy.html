@@ -1,0 +1,44 @@
+/*crear un documento HTML con dos 
+contenedores div.
+❖ Cada contenedor tendrá un título y un botón. 
+❖ Por defecto, el primer div estará visible y el 
+segundo oculto. 
+❖ Al pulsar el botón del primer div, se ocultará este 
+contenedor y mostrará el segundo. 
+❖ Al pulsar el botón del segundo div, se realizará el 
+proceso inverso. */
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intercambiar Divs</title>
+    <style>
+      /* Ocultar el segundo div por defecto */
+      #div2 {
+        display: none;
+      }
+
+      /* Estilo opcional para los divs */
+      .contenedor {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" class="contenedor">
+      <h2>Contenedor 1</h2>
+      <button id="btn1">Mostrar Contenedor 2</button>
+    </div>
+
+    <div id="div2" class="contenedor">
+      <h2>Contenedor 2</h2>
+      <button id="btn2">Mostrar Contenedor 1</button>
+    </div>
+
+    <script src="./exercice-7.js"></script>
+  </body>
+</html>

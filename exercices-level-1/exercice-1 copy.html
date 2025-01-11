@@ -1,0 +1,22 @@
+/*crear una pequeña página con un botón que, al pulsarlo, haga aparecer una
+alerta con un "Hello World"*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="boton1">Pulsa</button>
+    <script defer>
+      // document.getElementById('boton1').addEventListener('click', function() {
+      //     alert('Hello World');
+      // });
+      document.querySelector("#boton1").addEventListener("click", function () {
+        alert("Hello World");
+      });
+    </script>
+  </body>
+</html>

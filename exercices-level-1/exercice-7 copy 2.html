@@ -1,0 +1,52 @@
+/*crear un documento HTML con dos 
+contenedores div.
+❖ Cada contenedor tendrá un título y un botón. 
+❖ Por defecto, el primer div estará visible y el 
+segundo oculto. 
+❖ Al pulsar el botón del primer div, se ocultará este 
+contenedor y mostrará el segundo. 
+❖ Al pulsar el botón del segundo div, se realizará el 
+proceso inverso. 
+Este esta con visibility
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intercambiar Divs</title>
+    <style>
+      /* Configuración inicial de los contenedores */
+      #div1 {
+        visibility: visible; /* Visible por defecto */
+      }
+
+      #div2 {
+        visibility: hidden; /* Oculto por defecto */
+      }
+
+      /* Estilo opcional para los divs */
+      .contenedor {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        height: 150px; /* Para mantener el espacio reservado */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" class="contenedor">
+      <h2>Contenedor 1</h2>
+      <button id="btn1">Mostrar Contenedor 2</button>
+    </div>
+
+    <div id="div2" class="contenedor">
+      <h2>Contenedor 2</h2>
+      <button id="btn2">Mostrar Contenedor 1</button>
+    </div>
+
+    <script src="./script7-2.js"></script>
+  </body>
+</html>

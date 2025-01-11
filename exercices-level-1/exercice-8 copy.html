@@ -1,0 +1,47 @@
+/*crear un pequeño formulario HTML con 
+los siguientes elementos:
+❖ Un título.
+❖ Un campo para introducir el nombre.
+❖ Un contenedor div sin contenido.
+❖ Un botón de enviar.
+❖ Al pulsar el botón, aparecerá en el contenedor div
+el valor “Hola, ” y el nombre introducido en el 
+campo de texto. */
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Bienvenida</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      form {
+        max-width: 400px;
+      }
+
+      #mensaje {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulario de Bienvenida</h1>
+    <form id="formulario">
+      <label for="nombre">Introduce tu nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+      <br /><br />
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje"></div>
+
+    <script src="./exercice-8.js"></script>
+  </body>
+</html>
