@@ -14,24 +14,14 @@ const div2 = document.getElementById("div2");
 const botonDiv1 = document.getElementById("botonDiv1");
 const botonDiv2 = document.getElementById("botonDiv2");
 
-// Función para mostrar un div
-function mostrar(div) {
-  div.style.display = "block";
-}
-
-// Función para ocultar un div
-function ocultar(div) {
-  div.style.display = "none";
+// Función para mostrar un div y ocultar el otro
+function mostrarDiv(divAMostrar, divAOcultar) {
+  divAMostrar.style.display = "block";
+  divAOcultar.style.display = "none";
 }
 
 // Evento para mostrar el segundo div y ocultar el primero
-botonDiv1.addEventListener("click", () => {
-  ocultar(div1);
-  mostrar(div2);
-});
+botonDiv1.addEventListener("click", () => mostrarDiv(div2, div1));
 
 // Evento para mostrar el primer div y ocultar el segundo
-botonDiv2.addEventListener("click", () => {
-  ocultar(div2);
-  mostrar(div1);
-});
+botonDiv2.addEventListener("click", () => mostrarDiv(div1, div2));
