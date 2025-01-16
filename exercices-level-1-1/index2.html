@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Pulsar</button>
+    <script>
+/*Al pulsar el botón del ejercicio anterior, 
+hacer que se muestre por consola un mensaje de 
+log, otro de información y otro de error.*/
+
+      document.querySelector("button").addEventListener("click", saludar);
+      function saludar() {
+        alert("hola");
+        console.log("hola log");
+        console.info("hola info");
+        console.error("hola error");
+      }
+    </script>
+  </body>
+</html>
